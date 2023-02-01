@@ -1,1 +1,39 @@
-/* You can add global styles to this file, and also import other style files */
+.navigation {
+  display: flex;
+  justify-content: flex-end; /* aligning the navigation items to the right */
+  background-color: #000000; /* adding a blue background color to the navigation bar */
+}
+
+.navigation-items {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-items a {
+  margin: 0 10px; /* adding some space between the links */
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+}
+
+.navigation-items a:hover {
+  color: #f0f17d; /* changing the color of the link on hover */
+}
+
+/* Media queries to show the menu button and hide the navigation items on smaller screens */
+
+@media (max-width: 768px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .navigation {
+    display: none;
+  }
+}
+
+body {
+  background-color: rgba(255, 255, 255, 0.611);
+}

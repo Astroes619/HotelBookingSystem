@@ -1,0 +1,15 @@
+<li class="room">
+  <p class="title">{{ room.name | titlecase }}</p>
+  <br />
+  <br />
+  <img [src]="room.image" [alt]="room.name" width="500" />
+
+  <img [src]="room.image2" [alt]="room.name" width="500" />
+
+  <br />
+  <p class="description">{{ room.description }}</p>
+
+  <p class="currency">{{ room.amount | currency : "LKR" }} Room Only</p>
+
+  <button [routerLink]="['/booking']">Book Now</button>
+</li>

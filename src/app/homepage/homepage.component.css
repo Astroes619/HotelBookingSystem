@@ -1,0 +1,13 @@
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.room {
+  list-style: none;
+  text-overflow: ellipsis;
+  width: 1000px;
+  text-align: center;
+
+  cursor: pointer;
+}

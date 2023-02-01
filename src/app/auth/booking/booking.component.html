@@ -1,0 +1,25 @@
+<div>
+  <h3>Check-in date:</h3>
+  <input
+    type="date"
+    [(ngModel)]="from.checkInDate"
+    (ngModelChange)="(from.calculateNights)"
+  />
+  <h3>Check-out date:</h3>
+  <input
+    type="date"
+    [(ngModel)]="from.checkOutDate"
+    (ngModelChange)="(from.calculateNights)"
+  />
+  <br />
+  <br />
+
+  <div>
+    <button (click)="incrementAdults()">Add Adult</button>
+    <p>Adults: {{ adults }}</p>
+    <p>Rooms: {{ rooms }}</p>
+  </div>
+  <br />
+  <button (click)="confirmBooking()">Confirm Booking</button>
+</div>
+<br />
